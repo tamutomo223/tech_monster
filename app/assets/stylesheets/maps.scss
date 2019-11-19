@@ -4,10 +4,10 @@
 
 .wrapper {
   position: relative;
-  height: 800px;
+  height: 750px;
   width:1000px;
   margin: 0 auto;
-  background-color: gray;
+  background-color:rgb(90, 58, 28);
   font-size:0;
   .squares {
     border:solid 1px black;
@@ -17,14 +17,26 @@
     margin-top:0;
     padding:0;
     font-size:0;
+    
   }
+  
+  [id = "150"]{
+    background-color: green;
+  }
+  
+
+  
   .icon {
-    font-size:20px;
-    height: 25px;
-    width:25px;
+    height: 50px;
+    width:50px;
     position:absolute;
+    top:350px;
+    left:500px;
     background-color: blue;
-    top:50%;
-    left:50%;
+    .fa-icon {
+      color:red;
+      font-size:20px;
+    }
+    
   }
 }
