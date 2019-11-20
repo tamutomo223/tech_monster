@@ -71,5 +71,5 @@ gem 'pry-rails'
 
 gem 'jquery-rails'
 
-gem "font-awesome-rails"
+
 gem "font-awesome-sass"

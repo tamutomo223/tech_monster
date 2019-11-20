@@ -2,41 +2,181 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
 .wrapper {
   position: relative;
   height: 750px;
   width:1000px;
   margin: 0 auto;
-  background-color:rgb(90, 58, 28);
+  background-image:url("/ベース2.png");
+  background-size: 50px;
   font-size:0;
   .squares {
-    border:solid 1px black;
-    height: 48px;
-    width:48px;
+    height: 50px;
+    width:50px;
     display: inline-block;
     margin-top:0;
     padding:0;
     font-size:0;
-    
   }
-  
-  [id = "150"]{
-    background-color: green;
+
+  [id = "10102"],[id = "10103"],[id= "10104"],[id= "10105"]{
+    background-image:url("/壁.png");
+    background-size: 52px;
   }
-  
+
+  [id = "10086"],[id = "10066"],[id = "10046"],[id = "10026"]{
+    background-image:url("/壁右.png");
+    background-size: cover;
+  }
+
+  [id = "10132"] {
+    background-image:url("/ポケセン左上1.png");
+    background-size: cover;
+  }
+
+  [id = "10133"] {
+    background-image:url("/ポケセン右上1.png");
+    background-size: cover;
+  }
+
+  [id = "10152"] {
+    background-image:url("/ポケセン左下1.png");
+    background-size: cover;
+  }
+
+  [id = "10153"] {
+    background-image:url("/ポケセン右下1.png");
+    background-size: cover;
+  }
+
+  [id = "10106"] {
+    background-image:url("/壁右下.png");
+    background-size: cover;
+  }
 
   
+  [id = "10065"],[id = "10064"],[id= "10063"],[id= "10062"],[id= "10061"],[id= "10083"],[id= "10084"],[id= "10085"],
+  [id= "10043"],[id = "10045"],[id = "10044"],[id = "10082"]{
+    background-image:url("/草5.png");
+    background-size: cover;
+  }
+
+  [id = "10215"],[id = "10216"],[id= "10217"],[id= "10235"],[id= "10236"],[id= "10237"],[id= "10255"],[id= "10256"],
+  [id= "10257"],[id = "10275"],[id = "10276"],[id = "10277"]{
+    background-image:url("/草5.png");
+    background-size: contain;
+  }
+
+  [id = "10203"],[id = "10204"],[id = "10205"],[id = "10206"],[id = "10207"],[id = "10223"],
+  [id = "10224"],[id = "10225"],[id = "10226"],[id = "10227"],
+  [id = "10243"],[id = "10244"],[id = "10245"],[id = "10246"],[id = "10247"]
+  ,[id = "10263"],[id = "10264"],[id = "10265"],[id = "10266"],[id = "10267"],[id = "10283"],[id = "10287"]
+  {
+    background-image:url("/海.png");
+    background-size: cover;
+  }
+
+
+
+  [id = "10183"],[id = "10184"],[id = "10185"],[id = "10186"],[id = "10187"]
+  {
+    background-image:url("/海上.png");
+    background-size: cover;
+  }
+
+  [id = "10182"]{
+    background-image:url("/海左上.png");
+    background-size: cover;
+  }
+
+  [id = "10251"]{
+    background-image:url("/看板.png");
+    background-size: cover;
+  }
+
+  [id = "10188"]{
+    background-image:url("/海右上.png");
+    background-size: cover;
+  }
+
+  [id = "10208"],[id = "10228"],[id = "10248"],[id = "10268"],[id = "10288"]{
+    background-image:url("/海右.png");
+    background-size: cover;
+  }
+
+  [id = "10202"],[id = "10222"],[id = "10242"],[id = "10262"],[id = "10282"]{
+    background-image:url("/海左.png");
+    background-size: cover;
+  }
+  
+  [id = "10051"],[id = "10052"],[id = "10053"],[id = "10072"],[id = "10073"],[id = "10031"],[id = "10032"],[id = "10033"],[id = "10034"]
+  ,[id = "10035"],[id = "10036"],[id = "10054"],[id = "10055"],[id = "10056"],[id = "10071"],[id = "10074"],[id = "10075"],[id = "10076"],[id = "10092"]
+  ,[id = "10093"],[id = "10094"]{
+    background-image:url("/草5.png");
+    background-size: cover;
+  }
+
+  // [id = "10173"],[id = "10172"],[id = "10193"],[id = "10192"],[id = "10213"],[id = "10212"],[id = "10233"],[id = "10232"],
+  // [id = "10253"],[id = "10252"],[id = "10273"],[id = "10272"],[id = "10293"],[id = "10292"] {
+  //   background-image:url("/道.png");
+  //   background-size: cover;
+  // }
+
+  [id = "10000"],[id = "10001"],[id = "10002"],[id = "10003"],[id = "10004"],[id = "10005"],[id = "10006"],[id = "10007"],[id = "10008"]
+  ,[id = "10009"],[id = "10010"],[id = "10011"],[id = "10012"],[id = "10013"],[id = "10014"],[id = "10015"],[id = "10016"],[id = "10017"],[id = "10018"]
+  ,[id = "10019"],[id = "10020"],[id = "10040"],[id = "10060"],[id = "10080"],[id = "10100"],[id = "10120"],[id = "10140"],[id = "10160"],[id = "10180"]
+  ,[id = "10200"],[id = "10220"],[id = "10240"],[id = "10260"],[id = "10280"],[id = "10039"],[id = "10059"],[id = "10079"],[id = "10099"],[id = "10119"],[id = "10139"],[id = "10159"],
+  [id = "10179"],[id = "10199"],[id = "10219"],[id = "10239"],[id = "10259"],[id = "10279"],[id = "10299"],
+  [id = "10281"],[id = "10289"],[id = "10290"]
+  ,[id = "10291"],[id = "10294"],[id = "10295"],[id = "10296"],[id = "10297"],[id = "10298"],[id = "10299"]
+  {
+    background-image:url("/木2.png");
+    background-size: cover;
+  }
+  
   .icon {
-    height: 50px;
-    width:50px;
+    height: 25px;
+    width:25px;
     position:absolute;
-    top:350px;
-    left:500px;
-    background-color: blue;
-    .fa-icon {
-      color:red;
+    right:350px;
+    bottom:0px;
+    background-color: rgba(0, 0, 255, 0);
+    img{
       font-size:20px;
+      line-height: 25px;
+      width:25px;
+      height: 25px;
+      z-index: 9999;
+      display: block;
     }
     
   }
+
+  .ball {
+      width:25px;
+      height: 25px;
+      display: block;
+      position: absolute;
+      bottom:50px;
+      left:50px;
+      img {
+      font-size:20px;
+      line-height: 25px;
+      width:25px;
+      height: 25px;
+      display: block;   
+      
+    }
+}
+  // .info {
+  //   display: block;
+  //   position: absolute;
+  //   top:-25px;
+  //   background-color: white;
+  //   height:25px;
+  //   width:25px;
+  //   border-radius: 10px;
+  // }
 }
