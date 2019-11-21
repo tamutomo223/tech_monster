@@ -2,6 +2,9 @@
   #0.icon
     %img{src:"/主人公.png"}
       .info
-        a
   .ball
     %img{src:"/ボール.png"}  
+
+= icon 'fas', 'volume-up'
+= icon 'fas', 'volume-mute'
+= audio_tag "/assets/audios/top.mp3", controls: false, loop: true
