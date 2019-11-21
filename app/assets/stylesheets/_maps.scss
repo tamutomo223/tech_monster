@@ -68,7 +68,7 @@
   [id = "10203"],[id = "10204"],[id = "10205"],[id = "10206"],[id = "10207"],[id = "10223"],
   [id = "10224"],[id = "10225"],[id = "10226"],[id = "10227"],
   [id = "10243"],[id = "10244"],[id = "10245"],[id = "10246"],[id = "10247"]
-  ,[id = "10263"],[id = "10264"],[id = "10265"],[id = "10266"],[id = "10267"],[id = "10283"],[id = "10287"]
+  ,[id = "10263"],[id = "10264"],[id = "10265"],[id = "10266"],[id = "10267"],[id = "10283"],[id = "10287"],[id = "10284"],[id = "10285"],[id = "10286"]
   {
     background-image:url("/海.png");
     background-size: cover;
@@ -195,7 +195,7 @@
     right:300px;
     bottom:0px;
     background-color: rgba(0, 0, 255, 0);
-    .top,.right,.left,.bottom,.top_gif,.bottom_gif,.left_gif,.right_gif{
+    .top,.right,.left,.bottom,.top_gif,.bottom_gif,.left_gif,.right_gif,.rapu_left{
       display: none;
       background-color: rgba(0, 0, 255, 0);
     }
@@ -210,109 +210,4 @@
     }
     
   }
-
-  .ball {
-      width:25px;
-      height: 25px;
-      display: block;
-      position: absolute;
-      bottom:50px;
-      left:50px;
-      img {
-      font-size:20px;
-      line-height: 25px;
-      width:25px;
-      height: 25px;
-      display: block;   
-      
-    }
-  }
-  .men {
-    width:25px;
-      height: 25px;
-      display: block;
-      position: absolute;
-      top:50px;
-      left:350px;
-      img {
-      font-size:20px;
-      line-height: 25px;
-      width:25px;
-      height: 25px;
-      display: block;
-  }
-}
-
-.women {
-  width:25px;
-    height: 25px;
-    display: block;
-    position: absolute;
-    bottom:100px;
-    right:350px;
-    img {
-    font-size:20px;
-    line-height: 25px;
-    width:25px;
-    height: 25px;
-    display: block;
-}
-}
-
-.ooo {
-  width:25px;
-    height: 25px;
-    display: block;
-    position: absolute;
-    bottom:200px;
-    right:300px;
-    img {
-    font-size:20px;
-    line-height: 25px;
-    width:25px;
-    height: 25px;
-    display: block;
-}
-}
-.green {
-  width:25px;
-    height: 25px;
-    display: block;
-    position: absolute;
-    bottom:300px;
-    right:350px;
-    img {
-    font-size:20px;
-    line-height: 25px;
-    width:25px;
-    height: 25px;
-    display: block;
-}
-}
-
-.silver {
-  width:25px;
-    height: 25px;
-    display: block;
-    position: absolute;
-    bottom:300px;
-    right:225px;
-    img {
-    font-size:20px;
-    line-height: 25px;
-    width:25px;
-    height: 25px;
-    display: block;
-}
-}
-
-  // .info {
-  //   display: block;
-  //   position: absolute;
-  //   top:-25px;
-  //   background-color: white;
-  //   height:25px;
-  //   width:25px;
-  //   border-radius: 10px;
-  // }
 }

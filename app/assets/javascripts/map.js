@@ -48,9 +48,7 @@ $(function() {
         //arrという、進めないブロックをまとめた配列にその数字が当てはまるか
           if(arr.indexOf(goal) != -1){
             console.log("いけないよ")
-          } else if (arr_right_water.indexOf(goal) != -1){
-            
-          } else {
+          }  else {
         //当てはまらなければ右に２５ピクセル動き           
             
             $('.icon').animate({left: '+=25px'},200);
@@ -68,8 +66,6 @@ $(function() {
           goal = Number(attr) - 1
           if(arr.indexOf(goal) != -1){
             console.log("いけないよ")
-          }else if (arr_left_water.indexOf(goal) != -1){
-            left_water()
           } else {
             
             $('.icon').animate({left: '-=25px'},200);
@@ -86,9 +82,9 @@ $(function() {
           goal = Number(attr) + 1000
           if(arr.indexOf(goal) != -1){
             console.log("いけないよ")
-          }else if (arr_top_water.indexOf(goal) != -1){
+          }
             
-          }else {
+          else {
             
             $('.icon').animate({top: '-=25px'},200);
             encount(1000)
@@ -104,14 +100,56 @@ $(function() {
           goal = Number(attr) - 1000
           if(arr.indexOf(goal) != -1){
             console.log("いけないよ")
-          }else if (arr_down_water.indexOf(goal) != -1){
-          
-          }else {
-  
+          }else {  
             $('.icon').animate({top: '+=25px'},200);
             encount(-1000)
           }
         break;
+        
+        case 68:
+            $('.right').addClass('active');
+            $('.top').removeClass('active');
+            $('.left').removeClass('active');
+            $('.bottom').removeClass('active');
+            attr = $(".icon").attr('id')
+            goal = Number(attr) + 2
+            $('.icon').animate({left: '+=50px'},1000);
+            encount(2)
+        break;
+
+        case 65:
+            $('.left').addClass('active');
+            $('.top').removeClass('active');
+            $('.right').removeClass('active');
+            $('.bottom').removeClass('active');
+            attr = $(".icon").attr('id')
+            goal = Number(attr) - 2
+            $('.icon').animate({left: '-=50px'},1000);
+            encount(-2)
+        break;
+
+        case 87:
+            $('.top').addClass('active');
+            $('.right').removeClass('active');
+            $('.left').removeClass('active');
+            $('.bottom').removeClass('active');
+            attr = $(".icon").attr('id')
+            goal = Number(attr) + 2000
+            $('.icon').animate({top: '-=50px'},1000);
+            encount(2000)
+        break;
+
+        case 83:
+            $('.bottom').addClass('active');
+            $('.right').removeClass('active');
+            $('.left').removeClass('active');
+            $('.top').removeClass('active');
+            attr = $(".icon").attr('id')
+            goal = Number(attr) - 2000
+            $('.icon').animate({top: '+=50px'},1000);
+            encount(-2000)
+        break;
+
     }
   });
 

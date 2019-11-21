@@ -1,5 +1,5 @@
 function block() {
-  arr = [2997,6003,6005,6006,19987]
+  arr = [2997,6003,6005,6006,19987,977,-23]
 
   //入り口下
   for (var arr1 = -1001; arr1 <= -998 ; arr1++) {
@@ -7,7 +7,7 @@ function block() {
   }
 
   //海内陸
-  for (var arr1 = 975; arr1 <= 978 ; arr1++) {
+  for (var arr1 = 973; arr1 <= 976 ; arr1++) {
     arr.unshift(arr1)
   }
 
@@ -94,8 +94,6 @@ function block() {
     arr.unshift(arr1)
   }
 
-
-
   //柵左
   for (var arr1 = 1993; arr1 <= 10993 ; arr1+=1000) {
     arr.unshift(arr1)
@@ -143,44 +141,47 @@ function block() {
   for (var arr1 = 19989; arr1 <= 19992 ; arr1++) {
     arr.unshift(arr1)
   }
-
-
-
-  return arr;
-}
-
-function water_left(){
-  arr_left_water = [-119,983]
+  
+  for (var arr1 = -1023; arr1 <= -1010 ; arr1++) {
+    arr.unshift(arr1)
+  }
+    
   for (var arr1 = 990; arr1 <= 10990 ; arr1+=1000) {
-    arr_left_water.unshift(arr1)
+    arr.unshift(arr1)
   }
 
-  return arr_left_water;
-}
-
-function water_right(){
-  arr_right_water = [-18,989]
   for (var arr1 = 1977; arr1 <= 10977 ; arr1+=1000) {
-    arr_right_water.unshift(arr1)
+    arr.unshift(arr1)
   }
 
-  return arr_right_water;
-}
 
-function water_top(){
-  arr_top_water = []
-  for (var arr1 = 1981; arr1 <= 1986 ; arr1++) {
-    arr_top_water.unshift(arr1)
-  }
-
-  return arr_top_water;
-}
-
-function water_down(){
-  arr_down_water = []
   for (var arr1 = 10977; arr1 <= 10990 ; arr1++) {
-    arr_down_water.unshift(arr1)
+    arr.unshift(arr1)
+  }
+  return arr;
   }
 
-  return arr_down_water;
-}
+
+  function water_in_left() {
+    arr=[]
+    for (var arr1 = -9; arr1 <= 9989 ; arr1+=1000) {     
+      arr.unshift(arr1)
+      return arr
+    }
+  }
+
+  function water_in_right() {
+    arr=[]
+    for (var arr1 = 1978; arr1 <= 9978 ; arr1+=1000) {
+      arr.unshift(arr1)
+      return arr
+    }
+  }
+
+  function water_in_top() {
+    arr=[]
+    for (var arr1 = 9978; arr1 <= 9989 ; arr1++) {
+      arr.unshift(arr1)
+      return arr
+    }
+  }
