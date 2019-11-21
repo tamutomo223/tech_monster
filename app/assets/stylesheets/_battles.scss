@@ -57,12 +57,8 @@
 
 @keyframes Enemy {
   0%{
-<<<<<<< Updated upstream
-    transform: translateX(300%);
-=======
     opacity: 0;
     transform: translateX(100%);
->>>>>>> Stashed changes
   }
   100%{
     opacity: 1;
