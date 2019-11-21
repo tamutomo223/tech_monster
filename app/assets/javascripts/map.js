@@ -9,14 +9,23 @@ $(function() {
     $(".icon").attr("id",move)
     //再度idを取得する
     let glass_place = $(".icon").attr("id")
-    //右上の草むらの座標を配列にし
-    let glass_ids = [1111111111]
+    //左上の草むらの座標を配列にするメソッド呼び出し
+    glass_1()
     //48分の1の確立を12分の1に変える
-    let random = Math.floor( Math.random() * glass_ids.length );
-    let random2 = Math.floor( Math.random() * glass_ids.length );
-    let random3 = Math.floor( Math.random() * glass_ids.length );
+    let random = Math.floor( Math.random() * glass1_ids.length );
+    let random2 = Math.floor( Math.random() * glass1_ids.length );
+    let random3 = Math.floor( Math.random() * glass1_ids.length );
+
+    glass_2()
+    let random4 = Math.floor( Math.random() * glass2_ids.length );
+    let random5 = Math.floor( Math.random() * glass2_ids.length );
+    let random6 = Math.floor( Math.random() * glass2_ids.length );
+    let random7 = Math.floor( Math.random() * glass2_ids.length );
+
+
     //ランダムで取得したものに当てはまれば移動
-    if(glass_place == glass_ids[random] ||glass_place == glass_ids[random2] || glass_place == glass_ids[random3]){
+    if(glass_place == glass1_ids[random] ||glass_place == glass1_ids[random2] || glass_place == glass1_ids[random3] ||
+      glass_place == glass2_ids[random4] || glass_place == glass2_ids[random5] ||glass_place == glass2_ids[random6] ||glass_place == glass2_ids[random7]){
       window.location.href = "battles/1"
     }
   }
