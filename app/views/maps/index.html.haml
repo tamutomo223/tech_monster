@@ -1,10 +1,43 @@
 .wrapper
   #0.icon
-    %img{src:"/主人公.png"}
+    
+    %img{src:"/右向き.gif",class:"right"}
+    %img{src:"/主人公.gif",class:"bottom"}
+    %img{src:"/左向き.gif",class:"left"}
+    %img{src:"/後ろ向き.gif",class:"top active"}
+    %img{src:"/右向き.gif",class:"right_gif"}
+    %img{src:"/主人公.gif",class:"bottom_gif"}
+    %img{src:"/左向き.gif",class:"left_gif"}
+    %img{src:"/後ろ向き.gif",class:"top_gif"}
+    %img{src:"ラプラス.gif",class:"rapu_left"}
       .info
   .ball
-    %img{src:"/ボール.png"}  
+
+    %img{src:"/ボール.png"} 
+
+  .men
+    %img{src:"/男トレーナー.png"}
+  .women
+    %img{src:"/女トレーナー.png"}
+  .ooo
+    %img{src:"/オーキド.png"}
+  .green
+    %img{src:"/グリーン右.png"}  
+  .silver
+    %img{src:"/シルバー右.png"} 
+  .gara
+    %img{src:"/ギャラドス.gif"}
+  .rwomen
+    %img{src:"/ロケット団女.png"}
+  .rmen    
+    %img{src:"/ロケット団男.png"}
+  .wataru
+    %img{src:"/ワタル.png"}
+  .adult
+    %img{src:"/大人のお姉さん.png"}
 
 = icon 'fas', 'volume-up'
 = icon 'fas', 'volume-mute'
+
 = audio_tag "/assets/audios/top.mp3", controls: false, loop: true, autoplay: true
+
