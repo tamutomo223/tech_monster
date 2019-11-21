@@ -30,11 +30,17 @@ $(function() {
     }
   }
 
+  
+
   //キーが押された時の処理
-  $("html").keydown(function(e){
+  $("html").keyup(function(e){
     switch(e.which){
         //右キーが押された時
         case 39:
+          $('.right').addClass('active');
+          $('.top').removeClass('active');
+          $('.left').removeClass('active');
+          $('.bottom').removeClass('active');
         //現在のアイコンのidを取得  
           attr = $(".icon").attr('id')
         //そのidに１をプラスする(右に行くので)  
@@ -45,27 +51,37 @@ $(function() {
           } else if (arr_right_water.indexOf(goal) != -1){
             
           } else {
-        //当てはまらなければ右に２５ピクセル動き    
-            $('.icon').animate({left: '+=25px'},100);
+        //当てはまらなければ右に２５ピクセル動き           
+            
+            $('.icon').animate({left: '+=25px'},200);
         //エンカウント関数を呼び出す(上記)
             encount(1)
           }
         break;
 
         case 37:
+          $('.left').addClass('active');
+          $('.top').removeClass('active');
+          $('.right').removeClass('active');
+          $('.bottom').removeClass('active');
           attr = $(".icon").attr('id')
           goal = Number(attr) - 1
           if(arr.indexOf(goal) != -1){
             console.log("いけないよ")
           }else if (arr_left_water.indexOf(goal) != -1){
-            
+            left_water()
           } else {
-            $('.icon').animate({left: '-=25px'},100);
+            
+            $('.icon').animate({left: '-=25px'},200);
             encount(-1)
           }
         break;
 
         case 38:
+          $('.top').addClass('active');
+          $('.right').removeClass('active');
+          $('.left').removeClass('active');
+          $('.bottom').removeClass('active');
           attr = $(".icon").attr('id')
           goal = Number(attr) + 1000
           if(arr.indexOf(goal) != -1){
@@ -73,12 +89,17 @@ $(function() {
           }else if (arr_top_water.indexOf(goal) != -1){
             
           }else {
-            $('.icon').animate({top: '-=25px'},100);
+            
+            $('.icon').animate({top: '-=25px'},200);
             encount(1000)
           }
         break;
  
         case 40:
+          $('.bottom').addClass('active');
+          $('.top').removeClass('active');
+          $('.left').removeClass('active');
+          $('.right').removeClass('active');
           attr = $(".icon").attr('id')
           goal = Number(attr) - 1000
           if(arr.indexOf(goal) != -1){
@@ -86,7 +107,8 @@ $(function() {
           }else if (arr_down_water.indexOf(goal) != -1){
           
           }else {
-            $('.icon').animate({top: '+=25px'},100);
+  
+            $('.icon').animate({top: '+=25px'},200);
             encount(-1000)
           }
         break;
@@ -101,6 +123,18 @@ $(function() {
   for (var i = 10000; i < 10300 ; i++) {
     buildHTML(i)
   }
+
+  $("#10000").attr("id","100000");
+  $("#10001").attr("id","100001");
+  $("#10002").attr("id","100002");
+  $("#10003").attr("id","100003");
+  $("#10004").attr("id","100004");
+  $("#10005").attr("id","100005");
+  $("#10006").attr("id","100006");
+  $("#10007").attr("id","100007");
+  $("#10008").attr("id","100008");
+  $("#10009").attr("id","100009");
+  $("#10010").attr("id","100010");
 
 
   //block.jsの内容を呼び出しarrという配列を受け取る

@@ -146,8 +146,7 @@
     background-size: cover;
   }
 
-  [id = "10000"],[id = "10001"],[id = "10002"],[id = "10003"],[id = "10004"],[id = "10005"],[id = "10006"],[id = "10007"],[id = "10008"]
-  ,[id = "10009"],[id = "10010"],[id = "10011"],[id = "10012"],[id = "10013"],[id = "10014"],[id = "10015"],[id = "10016"],[id = "10017"],[id = "10018"]
+  [id = "100000"],[id = "100001"],[id = "100002"],[id = "100003"],[id = "100004"],[id = "100005"],[id = "100006"],[id = "100007"],[id = "100008"],[id = "100009"],[id = "100010"],[id = "10011"],[id = "10012"],[id = "10013"],[id = "10014"],[id = "10015"],[id = "10016"],[id = "10017"],[id = "10018"]
   ,[id = "10019"],[id = "10020"],[id = "10040"],[id = "10060"],[id = "10080"],[id = "10100"],[id = "10120"],[id = "10140"],[id = "10160"],[id = "10180"]
   ,[id = "10200"],[id = "10220"],[id = "10240"],[id = "10260"],[id = "10280"],[id = "10039"],[id = "10059"],[id = "10079"],[id = "10099"],[id = "10119"],[id = "10139"],[id = "10159"],
   [id = "10179"],[id = "10199"],[id = "10219"],[id = "10239"],[id = "10259"],[id = "10279"],[id = "10299"],
@@ -196,13 +195,18 @@
     right:300px;
     bottom:0px;
     background-color: rgba(0, 0, 255, 0);
-    img{
+    .top,.right,.left,.bottom,.top_gif,.bottom_gif,.left_gif,.right_gif{
+      display: none;
+      background-color: rgba(0, 0, 255, 0);
+    }
+    .active{
       font-size:20px;
       line-height: 25px;
       width:25px;
       height: 25px;
       z-index: 9999;
       display: block;
+      background-color: rgba(0, 0, 255, 0);
     }
     
   }
@@ -222,7 +226,86 @@
       display: block;   
       
     }
+  }
+  .men {
+    width:25px;
+      height: 25px;
+      display: block;
+      position: absolute;
+      top:50px;
+      left:350px;
+      img {
+      font-size:20px;
+      line-height: 25px;
+      width:25px;
+      height: 25px;
+      display: block;
+  }
 }
+
+.women {
+  width:25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    bottom:100px;
+    right:350px;
+    img {
+    font-size:20px;
+    line-height: 25px;
+    width:25px;
+    height: 25px;
+    display: block;
+}
+}
+
+.ooo {
+  width:25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    bottom:200px;
+    right:300px;
+    img {
+    font-size:20px;
+    line-height: 25px;
+    width:25px;
+    height: 25px;
+    display: block;
+}
+}
+.green {
+  width:25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    bottom:300px;
+    right:350px;
+    img {
+    font-size:20px;
+    line-height: 25px;
+    width:25px;
+    height: 25px;
+    display: block;
+}
+}
+
+.silver {
+  width:25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    bottom:300px;
+    right:225px;
+    img {
+    font-size:20px;
+    line-height: 25px;
+    width:25px;
+    height: 25px;
+    display: block;
+}
+}
+
   // .info {
   //   display: block;
   //   position: absolute;
