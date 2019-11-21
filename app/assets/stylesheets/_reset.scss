@@ -1,9 +1,26 @@
+@font-face {
+  font-family: 'DragonQuest';
+  src: font-url('/assets/fonts/PixelMplus10-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
+  font-size: 20px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'DragonQuest';
 }
 
 .wrapper {
   cursor: none;
+  zoom: 90%;
+}
+
+.fa-volume-mute, .fa-volume-up {
+  font-size: 40px;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
 }

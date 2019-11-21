@@ -10,8 +10,8 @@
     %img{src:"/左向き.gif",class:"left_gif"}
     %img{src:"/後ろ向き.gif",class:"top_gif"}
       .info
-        a
   .ball
+
     %img{src:"/ボール.png"} 
 
   .men
@@ -24,3 +24,10 @@
     %img{src:"/グリーン右.png"}  
   .silver
     %img{src:"/シルバー右.png"} 
+
+    %img{src:"/ボール.png"}  
+
+= icon 'fas', 'volume-up'
+= icon 'fas', 'volume-mute'
+= audio_tag "/assets/audios/top.mp3", controls: false, loop: true
+

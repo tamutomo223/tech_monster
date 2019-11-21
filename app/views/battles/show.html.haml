@@ -1,2 +1,17 @@
-.top
-  バトルページ
+.battle-wrapper
+  .enemy
+    .enemy__name
+      ばけぎつね が あらわれた
+    .enemy__hp
+      HP : 30
+  %image{src: "/化け狐.png", class: "enemy-img"}
+
+  .player
+    .player__command
+      %p ゆうしゃ は どうする？
+      %p{id: "attack"} たたかう
+      %p どうぐ
+      %p{id: "escape"} にげる
+
+
+= audio_tag "/assets/audios/battle.mp3", controls: false, autoplay: true, loop: true
