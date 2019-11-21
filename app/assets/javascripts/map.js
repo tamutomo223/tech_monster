@@ -41,6 +41,10 @@ $(function() {
           $('.top').removeClass('active');
           $('.left').removeClass('active');
           $('.bottom').removeClass('active');
+          $('.rapu_right').removeClass('active');
+          $('.rapu_top').removeClass('active');
+          $('.rapu_left').removeClass('active');
+          $('.rapu_bottom').removeClass('active');
         //現在のアイコンのidを取得  
           attr = $(".icon").attr('id')
         //そのidに１をプラスする(右に行くので)  
@@ -48,9 +52,19 @@ $(function() {
         //arrという、進めないブロックをまとめた配列にその数字が当てはまるか
           if(arr.indexOf(goal) != -1){
             console.log("いけないよ")
-          }  else {
-        //当てはまらなければ右に２５ピクセル動き           
-            
+          }  else if(arrw.indexOf(goal) != -1){
+            $('.icon').animate({left: '+=25px'},200);
+            encount(1)
+            $('.right').removeClass('active');
+            $('.top').removeClass('active');
+            $('.left').removeClass('active');
+            $('.bottom').removeClass('active');
+            $('.rapu_right').addClass('active');
+            $('.rapu_top').removeClass('active');
+            $('.rapu_left').removeClass('active');
+            $('.rapu_bottom').removeClass('active');
+          }else {
+        //当てはまらなければ右に２５ピクセル動き                       
             $('.icon').animate({left: '+=25px'},200);
         //エンカウント関数を呼び出す(上記)
             encount(1)
@@ -62,11 +76,26 @@ $(function() {
           $('.top').removeClass('active');
           $('.right').removeClass('active');
           $('.bottom').removeClass('active');
+          $('.rapu_right').removeClass('active');
+          $('.rapu_top').removeClass('active');
+          $('.rapu_left').removeClass('active');
+          $('.rapu_bottom').removeClass('active');
           attr = $(".icon").attr('id')
           goal = Number(attr) - 1
           if(arr.indexOf(goal) != -1){
             console.log("いけないよ")
-          } else {
+          } else if(arrw.indexOf(goal) != -1) {
+            $('.icon').animate({left: '-=25px'},200);
+            encount(-1)
+            $('.right').removeClass('active');
+            $('.top').removeClass('active');
+            $('.left').removeClass('active');
+            $('.bottom').removeClass('active');
+            $('.rapu_right').removeClass('active');
+            $('.rapu_top').removeClass('active');
+            $('.rapu_left').addClass('active');
+            $('.rapu_bottom').removeClass('active');
+          }else {
             
             $('.icon').animate({left: '-=25px'},200);
             encount(-1)
@@ -78,14 +107,27 @@ $(function() {
           $('.right').removeClass('active');
           $('.left').removeClass('active');
           $('.bottom').removeClass('active');
+          $('.rapu_right').removeClass('active');
+          $('.rapu_top').removeClass('active');
+          $('.rapu_left').removeClass('active');
+          $('.rapu_bottom').removeClass('active');
           attr = $(".icon").attr('id')
           goal = Number(attr) + 1000
           if(arr.indexOf(goal) != -1){
             console.log("いけないよ")
-          }
-            
-          else {
-            
+          }else if(arrw.indexOf(goal) != -1) {
+            $('.icon').animate({top: '-=25px'},200);
+            encount(1000)
+            $('.right').removeClass('active');
+            $('.top').removeClass('active');
+            $('.left').removeClass('active');
+            $('.bottom').removeClass('active');
+            $('.rapu_right').removeClass('active');
+            $('.rapu_top').addClass('active');
+            $('.rapu_left').removeClass('active');
+            $('.rapu_bottom').removeClass('active');
+          }            
+          else {            
             $('.icon').animate({top: '-=25px'},200);
             encount(1000)
           }
@@ -96,10 +138,25 @@ $(function() {
           $('.top').removeClass('active');
           $('.left').removeClass('active');
           $('.right').removeClass('active');
+          $('.rapu_right').removeClass('active');
+          $('.rapu_top').removeClass('active');
+          $('.rapu_left').removeClass('active');
+          $('.rapu_bottom').removeClass('active');
           attr = $(".icon").attr('id')
           goal = Number(attr) - 1000
           if(arr.indexOf(goal) != -1){
             console.log("いけないよ")
+          } else if(arrw.indexOf(goal) != -1) {
+            $('.icon').animate({top: '+=25px'},200);
+            encount(-1000)
+            $('.right').removeClass('active');
+            $('.top').removeClass('active');
+            $('.left').removeClass('active');
+            $('.bottom').removeClass('active');
+            $('.rapu_right').removeClass('active');
+            $('.rapu_top').removeClass('active');
+            $('.rapu_left').removeClass('active');
+            $('.rapu_bottom').addClass('active');
           }else {  
             $('.icon').animate({top: '+=25px'},200);
             encount(-1000)
@@ -177,11 +234,7 @@ $(function() {
 
   //block.jsの内容を呼び出しarrという配列を受け取る
   block()
-  water_right()
-  water_left()
-  water_top()
-  water_down()
-
+  water()
 
   //BGMの操作
   $('.fa-volume-up').hide();
