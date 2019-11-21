@@ -1,0 +1,60 @@
+.battle-wrapper{
+  padding: 20px 0;
+  text-align: center;
+  height: 100vh;
+  width:  100%;
+  margin: 0 auto;
+  background: black;
+} 
+
+.enemy{
+  z-index: 1;
+  color: white;
+  border: 5px solid white;
+  width: 400px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 10px 0 0;
+  border-radius: 5px;
+  &__name {
+    margin: 10px 0 0;
+  }
+  &__hp {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+  }
+}
+
+.enemy-img {
+  width: 25%;
+  height: auto;
+  transform: translateX(200%);
+  animation: Enemy 3s forwards;
+  margin: 30px auto 0;
+}
+
+.player {
+  color: white;
+  height: 200px;
+  width: 800px;
+  border: 5px solid white;
+  margin: 0 auto;
+  border-radius: 5px;
+
+  &__command p {
+    margin: 15px 0 0;
+    &:first-of-type {
+      margin-top: 3
+      0px;
+    }
+  }
+}
+
+@keyframes Enemy {
+  0%{
+    transform: translateX(300%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}

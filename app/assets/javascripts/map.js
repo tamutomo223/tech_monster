@@ -109,4 +109,22 @@ $(function() {
   water_left()
   water_top()
   water_down()
+
+
+  //BGMの操作
+  $('.fa-volume-up').hide();
+
+  $('.fa-volume-up').click(function() {
+    $(this).hide();
+    $('.fa-volume-mute').show();
+    $('audio')[0].pause();
+  });
+
+  $('.fa-volume-mute').click(function() {
+    $(this).hide();
+    $('.fa-volume-up').show();
+    $('audio')[0].play();
+  });
 });
+
+
