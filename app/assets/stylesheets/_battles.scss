@@ -39,19 +39,29 @@
 }
 
 .player {
+  display: flex;
+  justify-content: space-around;
   color: white;
   height: 200px;
   width: 800px;
   border: 5px solid white;
   margin: 0 auto;
+  padding: 10px 20px;
   border-radius: 5px;
 
-  &__command p {
+  &__command p, &__status p {
     margin: 15px 0 0;
-    &:first-of-type {
-      margin-top: 3
-      0px;
-    }
+  }
+
+  &__border {
+    transform: translateY(-10px);
+    height: 195px;
+    width: 5px;
+    background: white;
+  }
+
+  &__status {
+    margin: 0 50px 0 0;
   }
 }
 

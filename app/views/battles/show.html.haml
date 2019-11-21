@@ -12,6 +12,10 @@
       %p{id: "attack"} たたかう
       %p どうぐ
       %p{id: "escape"} にげる
+    .player__border
+    .player__status
+      %p{class: "player__status--name"} ゆうしゃ
+      %p{class: "player__status--hp"} HP : 100
 
 %input{name: "enemy_hp", type: "hidden", value: @enemy.hp, id: 'enemy_hp' }
 = audio_tag "/assets/audios/battle.mp3", controls: false, autoplay: true, loop: true
