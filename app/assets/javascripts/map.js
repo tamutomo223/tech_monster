@@ -22,7 +22,7 @@ $(function() {
   }
 
   //キーが押された時の処理
-  $("html").keyup(function(e){
+  $("html").keydown(function(e){
     switch(e.which){
         //右キーが押された時
         case 39:
