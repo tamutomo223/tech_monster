@@ -3,8 +3,8 @@
     .enemy__name
       ばけぎつね が あらわれた
     .enemy__hp
-      HP : 30
-  %image{src: "/化け狐.png", class: "enemy-img"}
+      = "HP : #{@enemy.hp}"
+  = image_tag @enemy.image, class: "enemy-img"
 
   .player
     .player__command
@@ -13,5 +13,8 @@
       %p どうぐ
       %p{id: "escape"} にげる
 
-
+%input{name: "enemy_hp", type: "hidden", value: @enemy.hp, id: 'enemy_hp' }
 = audio_tag "/assets/audios/battle.mp3", controls: false, autoplay: true, loop: true
+
+= audio_tag "/assets/audios/punch.mp3", controls: false, preload: true, id: "punch"
+= audio_tag "/assets/audios/monster.mp3", controls: false, preload: true, id: "cry"

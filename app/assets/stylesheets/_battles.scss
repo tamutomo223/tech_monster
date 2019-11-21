@@ -25,10 +25,15 @@
   }
 }
 
+.dying {
+  color:red;
+}
+
 .enemy-img {
+  opacity: 0;
   width: 25%;
   height: auto;
-  transform: translateX(200%);
+  transform: translateX(100%);
   animation: Enemy 3s forwards;
   margin: 30px auto 0;
 }
@@ -52,9 +57,15 @@
 
 @keyframes Enemy {
   0%{
+<<<<<<< Updated upstream
     transform: translateX(300%);
+=======
+    opacity: 0;
+    transform: translateX(100%);
+>>>>>>> Stashed changes
   }
   100%{
+    opacity: 1;
     transform: translateX(0);
   }
 }

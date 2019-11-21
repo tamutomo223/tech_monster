@@ -125,6 +125,7 @@ $(function() {
     $('.fa-volume-up').show();
     $('audio')[0].play();
   });
+  
 });
 
 
