@@ -1,5 +1,10 @@
+// Place all the styles related to the maps controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
 .wrapper {
-  zoom: 90%;
   position: relative;
   height: 750px;
   width:1000px;
@@ -26,22 +31,22 @@
     background-size: cover;
   }
 
-  [id = "10132"] {
+  [id = "10215"] {
     background-image:url("/ポケセン左上1.png");
     background-size: cover;
   }
 
-  [id = "10133"] {
+  [id = "10216"] {
     background-image:url("/ポケセン右上1.png");
     background-size: cover;
   }
 
-  [id = "10152"] {
+  [id= "10235"] {
     background-image:url("/ポケセン左下1.png");
     background-size: cover;
   }
 
-  [id = "10153"] {
+  [id= "10236"]{
     background-image:url("/ポケセン右下1.png");
     background-size: cover;
   }
@@ -58,11 +63,7 @@
     background-size: cover;
   }
 
-  [id = "10215"],[id = "10216"],[id= "10217"],[id= "10235"],[id= "10236"],[id= "10237"],[id= "10255"],[id= "10256"],
-  [id= "10257"],[id = "10275"],[id = "10276"],[id = "10277"]{
-    background-image:url("/草5.png");
-    background-size: contain;
-  }
+  
 
   [id = "10203"],[id = "10204"],[id = "10205"],[id = "10206"],[id = "10207"],[id = "10223"],
   [id = "10224"],[id = "10225"],[id = "10226"],[id = "10227"],
@@ -86,8 +87,8 @@
     background-size: cover;
   }
 
-  [id = "10251"]{
-    background-image:url("/看板.png");
+  [id = "10272"]{
+    background-image:url("/看板1.png");
     background-size: cover;
   }
 
@@ -113,21 +114,67 @@
     background-size: cover;
   }
 
-  // [id = "10173"],[id = "10172"],[id = "10193"],[id = "10192"],[id = "10213"],[id = "10212"],[id = "10233"],[id = "10232"],
-  // [id = "10253"],[id = "10252"],[id = "10273"],[id = "10272"],[id = "10293"],[id = "10292"] {
-  //   background-image:url("/道.png");
-  //   background-size: cover;
-  // }
+  [id = "10190"]{
+    background-image:url("/道左上1.png");
+    background-size: cover;
+  }
 
-  [id = "10000"],[id = "10001"],[id = "10002"],[id = "10003"],[id = "10004"],[id = "10005"],[id = "10006"],[id = "10007"],[id = "10008"]
-  ,[id = "10009"],[id = "10010"],[id = "10011"],[id = "10012"],[id = "10013"],[id = "10014"],[id = "10015"],[id = "10016"],[id = "10017"],[id = "10018"]
+  [id = "10197"]{
+    background-image:url("/道右上.png");
+    background-size: cover;
+  }
+
+  [id = "10192"],[id = "10195"],[id = "10196"],[id = "10191"]{
+    background-image:url("/道上1.png");
+    background-size: cover;
+  }
+
+  [id = "10210"],[id = "10230"],[id = "10250"],[id = "10270"]{
+    background-image:url("/道左.png");
+    background-size: cover;
+  }
+
+  [id = "10217"],[id = "10237"],[id = "10257"],[id = "10277"]{
+    background-image:url("/道右.png");
+    background-size: cover;
+  }
+
+  [id = "10194"],[id = "10193"],[id = "10211"],[id = "10213"],[id = "10212"],[id = "10214"],[id = "10231"],[id = "10232"],[id = "10233"],
+  [id = "10234"],[id = "10252"],[id = "10253"],[id = "10254"],[id = "10255"],[id = "10256"],
+  [id = "10271"],[id = "10251"],[id = "10273"],[id = "10274"],[id = "10275"],[id = "10276"],[id = "10293"],[id = "10294"]{
+    background-image:url("/道1.png");
+    background-size: cover;
+  }
+
+
+  [id = "10009"],[id = "10010"],[id = "10011"],[id = "10012"],[id = "10013"],[id = "10014"],[id = "10015"],[id = "10016"],[id = "10017"],[id = "10018"]
   ,[id = "10019"],[id = "10020"],[id = "10040"],[id = "10060"],[id = "10080"],[id = "10100"],[id = "10120"],[id = "10140"],[id = "10160"],[id = "10180"]
   ,[id = "10200"],[id = "10220"],[id = "10240"],[id = "10260"],[id = "10280"],[id = "10039"],[id = "10059"],[id = "10079"],[id = "10099"],[id = "10119"],[id = "10139"],[id = "10159"],
   [id = "10179"],[id = "10199"],[id = "10219"],[id = "10239"],[id = "10259"],[id = "10279"],[id = "10299"],
   [id = "10281"],[id = "10289"],[id = "10290"]
-  ,[id = "10291"],[id = "10294"],[id = "10295"],[id = "10296"],[id = "10297"],[id = "10298"],[id = "10299"]
+  ,[id = "10291"],[id = "10292"],[id = "10295"],[id = "10296"],[id = "10297"],[id = "10298"],[id = "10299"]
   {
     background-image:url("/木2.png");
+    background-size: cover;
+  }
+
+  [id = "10211"] {
+    background-image:url("/家左上.png");
+    background-size: cover;
+  }
+
+  [id = "10212"] {
+    background-image:url("/家右上.png");
+    background-size: cover;
+  }
+
+  [id = "10232"] {
+    background-image:url("/家右下.png");
+    background-size: cover;
+  }
+
+  [id = "10231"] {
+    background-image:url("/家左下.png");
     background-size: cover;
   }
   
@@ -135,7 +182,7 @@
     height: 25px;
     width:25px;
     position:absolute;
-    right:350px;
+    right:300px;
     bottom:0px;
     background-color: rgba(0, 0, 255, 0);
     img{
