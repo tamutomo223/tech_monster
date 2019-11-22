@@ -35,6 +35,14 @@ $(function() {
           fast_move(".bottom",-2000,{top: '+=50px'})
         break;
 
+        case 80:
+          window.location.href = "pokemons"
+        break;
+
+        case 78:
+          window.location.href = "users/new"
+        break;
+
     }
   });
 
