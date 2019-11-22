@@ -210,4 +210,48 @@
     }
     
   }
+
+  .red {
+    position: absolute;
+    background-color: red;
+    opacity: 0.6;
+    height: 750px;
+    width:1000px;
+    top:0;
+    left:0;
+    margin: 0 auto;
+    z-index: 999;
+  }
+
+  .page {
+    background-color:black;
+    height: 750px;
+    width:0px;
+    margin: 0 auto;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 1;
+    animation: Page 2s forwards;
+    z-index: 1000;
+  }
+  
+  
+  @keyframes Page {
+  0% {
+    width:0;
+  }
+  
+  90% {
+    width:1000px;
+  
+  }
+  
+  100% {
+    width:1000px;
+  
+  }
+  
+  }
 }
+
