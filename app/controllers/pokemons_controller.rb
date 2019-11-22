@@ -1,5 +1,10 @@
 class PokemonsController < ApplicationController
   def index
     
-  end 
+  end
+
+  def get
+    
+  end
+
 end
