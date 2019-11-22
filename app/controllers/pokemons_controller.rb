@@ -4,7 +4,7 @@ class PokemonsController < ApplicationController
   end
 
   def get
-    
+    @enemy = Monster.find(1)
   end
 
 end

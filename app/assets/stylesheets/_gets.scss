@@ -1,0 +1,87 @@
+.get-wrapper {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#monster-name {
+  display: none;
+  font-size: 50px;
+  margin: 0 auto;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#monster-name > span {
+  display: inline-block;
+  margin: 10px 0 0;
+  font-size: 50px;
+}
+
+#monster {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  opacity: 0;
+  text-align: center;
+  transition: 2s;
+  img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+#get-button {
+  position: relative;
+  font-weight: bold;
+  font-size: 25px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  background:linear-gradient(0deg,white 0%,white 50%,red 50%,red 100%);
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: .3s;
+  box-shadow: 0 5px #555;
+  cursor: pointer;
+  user-select: none;
+  &:hover{
+    transition: .3s;
+    opacity: .8;
+  }
+  &:active {
+    transition: 0s;
+    transform: translate(-50%, 5px);
+    box-shadow: none;
+  }
+
+  &__center {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    background: black;
+  }
+
+  &__point {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+    width: 15px;
+    background: white;
+  }
+}
