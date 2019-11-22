@@ -1,7 +1,7 @@
 .battle-wrapper
   .enemy
     .enemy__name
-      ばけぎつね が あらわれた
+      = "#{@enemy.name} が あらわれた"
     .enemy__hp
       = "HP : #{@enemy.hp}"
   = image_tag @enemy.image, class: "enemy-img"
@@ -9,16 +9,23 @@
   .player
     .player__command
       %p ゆうしゃ は どうする？
-      %p{id: "attack"} たたかう
-      %p どうぐ
-      %p{id: "escape"} にげる
+      %p{id: "attack"} 
+        = icon 'fas', 'caret-right' 
+        たたかう
+      %p 
+        どうぐ
+      %p{id: "escape"} 
+        にげる
     .player__border
     .player__status
       %p{class: "player__status--name"} ゆうしゃ
       %p{class: "player__status--hp"} HP : 100
 
+%input{name: "enemy_name", type: "hidden", value: @enemy.name, id: 'enemy_name' }
 %input{name: "enemy_hp", type: "hidden", value: @enemy.hp, id: 'enemy_hp' }
-= audio_tag "/assets/audios/battle.mp3", controls: false, autoplay: true, loop: true
 
+
+= audio_tag "/assets/audios/battle.mp3", controls: false, autoplay: true, loop: true
 = audio_tag "/assets/audios/punch.mp3", controls: false, preload: true, id: "punch"
 = audio_tag "/assets/audios/monster.mp3", controls: false, preload: true, id: "cry"
+= audio_tag "/assets/audios/cursor.mp3", controls: false, preload: true, id: "cursor"
