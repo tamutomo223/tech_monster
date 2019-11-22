@@ -4,5 +4,8 @@ Rails.application.routes.draw do
   resources :battles, only: [:show]
 
   get '/attack', to: 'battles#attack', as: 'attack'
+  resources :pokemons, only: [:index]
+  resources :users, only:[:new,:create]
+  get "users/login", to: "users#login",as:"user_login"
 end
 

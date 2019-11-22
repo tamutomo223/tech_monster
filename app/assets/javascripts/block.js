@@ -1,5 +1,5 @@
 function block() {
-  arr = [2997,6003,6005,6006,19987,977,-23]
+  arr = [2997,6003,6005,6006,19987,-24,4983,16977,16978,18992,26987,12003,11998,8000,3998,23000]
 
   //入り口下
   for (var arr1 = -1001; arr1 <= -998 ; arr1++) {
@@ -146,42 +146,6 @@ function block() {
     arr.unshift(arr1)
   }
     
-  for (var arr1 = 990; arr1 <= 10990 ; arr1+=1000) {
-    arr.unshift(arr1)
-  }
-
-  for (var arr1 = 1977; arr1 <= 10977 ; arr1+=1000) {
-    arr.unshift(arr1)
-  }
-
-
-  for (var arr1 = 10977; arr1 <= 10990 ; arr1++) {
-    arr.unshift(arr1)
-  }
+  
   return arr;
-  }
-
-
-  function water_in_left() {
-    arr=[]
-    for (var arr1 = -9; arr1 <= 9989 ; arr1+=1000) {     
-      arr.unshift(arr1)
-      return arr
-    }
-  }
-
-  function water_in_right() {
-    arr=[]
-    for (var arr1 = 1978; arr1 <= 9978 ; arr1+=1000) {
-      arr.unshift(arr1)
-      return arr
-    }
-  }
-
-  function water_in_top() {
-    arr=[]
-    for (var arr1 = 9978; arr1 <= 9989 ; arr1++) {
-      arr.unshift(arr1)
-      return arr
-    }
   }
