@@ -1,3 +1,7 @@
+function poke (){
+  window.location.href = "/get"
+}
+
 function encount(i) {
   //現在のidを確認
   attr = $(".icon").attr('id')
@@ -58,7 +62,10 @@ function move(a, b ,c ,d){
   $('.rapu_left').removeClass('active');
   $('.rapu_bottom').removeClass('active');
   $(b).addClass('active');
-  }else {
+  } else if(goal == 6004) {
+    $('.icon').animate(d,200);
+    setTimeout(poke,400);
+  } else {
   //当てはまらなければ右に２５ピクセル動き                       
   $('.icon').animate(d,200);
   //エンカウント関数を呼び出す(上記)

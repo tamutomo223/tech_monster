@@ -36,11 +36,15 @@ $(function() {
         break;
 
         case 80:
-          window.location.href = "pokemons"
+          window.location.href = "monsters"
         break;
 
         case 78:
-          window.location.href = "users/new"
+          window.location.href = "/users/sign_up"
+        break;
+
+        case 76:
+          window.location.href = "/users/sign_in"
         break;
 
     }

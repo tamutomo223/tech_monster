@@ -1,6 +1,6 @@
 class BattlesController < ApplicationController
   def show
-    @enemy = Monster.find(2)
+    @enemy = Monster.find(1)
   end
 
   def attack
