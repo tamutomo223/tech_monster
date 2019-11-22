@@ -1,0 +1,2 @@
+class MonsterUser < ApplicationRecord
+end
