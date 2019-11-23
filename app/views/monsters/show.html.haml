@@ -11,3 +11,5 @@
       = @monster.attack
   .monster-select
     = link_to "戦闘で使う","/update/#{@monster.id}",method: :patch
+  .monster-no-select
+    = link_to "戻る","/monsters"

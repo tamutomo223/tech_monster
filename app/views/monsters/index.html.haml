@@ -2,8 +2,10 @@
   .your-monster
     あなたの所持モンスター
   .monsters-index
-    - @monsters.each do |monster|
+    - @monsters.first(6).each do |monster|
       .monster-index
         = link_to monster_path(monster) do
           = monster.name
           %img{src:monster.image}
+  .monster-no-select
+    = link_to "戻る","/redirect"

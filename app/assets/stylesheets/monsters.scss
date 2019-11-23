@@ -14,7 +14,6 @@
   }
   .monsters-index{
     display: flex;
-    height: 700px;
     justify-content: center;
     
     .monster-index {
@@ -68,6 +67,19 @@
       font-size:20px;
       margin-bottom:10px;
     }
-
   }  
+  
+
+  
+}
+
+.monster-select,.monster-no-select{
+  margin-top:20px;
+  font-size:20px;
+  font-weight:bold;
+  text-align: center;
+  a{
+    color:white;
+    text-decoration: none;
+  }
 }
