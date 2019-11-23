@@ -1,0 +1,47 @@
+.log_in-wrapper {
+  width:1000px;
+  height: 700px;
+  margin:0 auto;
+  text-align: center;
+  background-color: black;
+  color:white;
+  h2 { 
+    font-size:40px;
+  }
+
+  .field {
+    margin:30px;
+    text-align: center;
+    input {
+      margin: 0 auto;
+      display: block;
+      width:350px;
+      line-height:40px;
+      text-align: center;
+    }
+    #user_remember_me{
+      width:10px;
+    }
+  }
+
+  .actions {
+    margin-bottom:30px;
+    input{
+    margin: 0 auto;
+    display: block;
+    background-color: black;
+    color:white;
+    border: 5px solid white;
+    border-radius: 10px;
+    padding:5px;
+    }
+  }
+}
+
+.link {
+    margin-top:30px;
+  a{
+    text-decoration: none;
+    color:white;
+  }
+}

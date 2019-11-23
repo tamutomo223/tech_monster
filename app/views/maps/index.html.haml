@@ -1,4 +1,3 @@
-
 .wrapper
   .clear
   #0.icon
@@ -41,6 +40,8 @@
   =current_user.email
 .current_monster
   =@current_user_monster.name
+.log_out
+  = link_to "ログアウト", destroy_user_session_path, method: :delete 
 = icon 'fas', 'volume-up'
 = icon 'fas', 'volume-mute'
 

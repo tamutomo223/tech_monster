@@ -4,6 +4,8 @@ class MapsController < ApplicationController
   end
 
   def redirect
+    @monster = Monster.find(1)
+    @user = User.find(1)
     redirect_to root_path
   end  
 end
