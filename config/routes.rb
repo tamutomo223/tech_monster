@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :battles, only: [:show]
   get '/attack', to: 'battles#attack', as: 'attack'
-  resources :monsters, only: [:index]
+  resources :monsters, only: [:index,:show]
   get "/get",to:"monsters#get"
 
 end
