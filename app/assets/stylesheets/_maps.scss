@@ -2,6 +2,36 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.side-bar {
+  position: absolute;
+  top:0;
+  left:0;
+  width:260px;
+  padding-left:5px;
+  text-align: center;
+  
+  .current_monster {
+    margin-top:50px;
+    img{
+      margin-top:30px;
+      height: 100px;
+      width: 130px;
+    }
+
+
+  }
+
+  .email {
+    margin-top:100px ;
+    line-height: 30px;
+  }
+
+  .log_out {
+    a{
+      color: black;
+    }
+  }
+}
 
 
 .wrapper {

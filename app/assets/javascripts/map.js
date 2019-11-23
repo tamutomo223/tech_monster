@@ -50,6 +50,8 @@ window.onload = function(){
             window.location.href = "/users/sign_in"
           break;
 
+          case 84:
+            window.location.href = "/"
       }
     });
 
