@@ -10,5 +10,11 @@ class MonstersController < ApplicationController
 
   def show
     @monster = Monster.find(params[:id])
-  end  
+  end
+  
+  def update
+    @user = User.find(current_user.id)
+    @user.update(current_monster_id: params[:id])
+    redirect_to root_path
+  end
 end

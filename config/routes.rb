@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/attack', to: 'battles#attack', as: 'attack'
   resources :monsters, only: [:index,:show]
   get "/get",to:"monsters#get"
+  patch "/update/:id",to:"monsters#update"
 
 end
 

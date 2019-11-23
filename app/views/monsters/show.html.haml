@@ -1,5 +1,13 @@
-= @monster.name
-HP
-= @monster.hp
-攻撃力    
-= @monster.attack
+.monsters-show-wrapper
+  .monster-show-name
+    = @monster.name
+  .monster-show
+    .monster-image
+      %img{src:@monster.image}
+    .monster-status  
+      HP
+      = @monster.hp
+      攻撃力    
+      = @monster.attack
+  .monster-select
+    = link_to "戦闘で使う","/update/#{@monster.id}",method: :patch

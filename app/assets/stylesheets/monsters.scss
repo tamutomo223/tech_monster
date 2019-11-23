@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .index-wrapper {
-  height: 700px;
+  height: 670px;
   width:999px;
   margin:0 auto;
   background-color: black;
@@ -37,4 +37,37 @@
       }
     }
   }
+}
+
+.monsters-show-wrapper {
+  background-color: black;
+  width:1000px;
+  height:700px;
+  color:white;
+  margin:0 auto;
+  text-align: center;
+  .monster-show-name {
+    font-size: 40px;
+  }
+  .monster-show {
+    display: block;
+    border: 5px solid white;
+    border-radius: 10px;
+    width:400px;
+    height:400px;
+    margin:0 auto;
+    margin-top:50px;
+    text-align: center;
+    
+    img{
+      padding:40px 0;
+      height:340px;
+      width:300px;
+    }
+    .monster-status {
+      font-size:20px;
+      margin-bottom:10px;
+    }
+
+  }  
 }
