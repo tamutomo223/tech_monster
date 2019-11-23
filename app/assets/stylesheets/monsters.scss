@@ -15,10 +15,15 @@
   .monsters-index{
     display: flex;
     justify-content: center;
+    width:750px;
+    height:500px;
+    
+    display: block;
+    margin:0 auto;
     
     .monster-index {
       display: inline-block;
-      margin-left:20px;
+      margin:30px 20px 0px;
       height:200px;
       width:200px;
       color: white;
@@ -26,11 +31,16 @@
       border-radius: 10px;
       margin-top:30px;
       text-align: center;
+      &::break{
+        word-break: break-all;
+      }
       a{
         color:white;
         text-decoration: none;
+        display: inline-block;
       }
       img{
+        display: inline-block;
         height:150px;
         width:150px;
       }
