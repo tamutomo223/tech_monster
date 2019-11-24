@@ -2,7 +2,7 @@
   .your-monster
     あなたの所持モンスター
   .monsters-index
-    - @monsters.first(6).each do |monster|
+    - @monsters.each do |monster|
       .monster-index
         = link_to monster_path(monster) do
           = monster.name
