@@ -4,6 +4,11 @@ class MonstersController < ApplicationController
     @monsters = @user.monsters
   end
 
+
+  def get
+    @enemy = Monster.order("RAND()").first
+  end
+
   def show
     @monster = Monster.find(params[:id])
   end

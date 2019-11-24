@@ -2,7 +2,18 @@ function add_enemy() {
   add_red1()
 
   function move_window(){
-    window.location.href = "battles/1"
+    attr = $(".icon").attr('id')
+    attrs = Number(attr)
+    glass_1()
+    glass_2()
+    water_1()
+    if(glass1_ids.indexOf(attrs) != -1){
+      window.location.href = "battles/1"
+    }else if(glass2_ids.indexOf(attrs) != -1) {
+      window.location.href = "battles/2"
+    }else if(water1_ids.indexOf(attrs) != -1){
+      window.location.href = "battles/3"
+    }
   }
 
   function add_class(){

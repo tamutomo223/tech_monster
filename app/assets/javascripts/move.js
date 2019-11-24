@@ -12,23 +12,33 @@ function encount(i) {
   //再度idを取得する
   let glass_place = $(".icon").attr("id")
   //左上の草むらの座標を配列にするメソッド呼び出し
-  glass_1()
+  glass_1();
   //48分の1の確立を12分の1に変える
   let random = Math.floor( Math.random() * glass1_ids.length );
   let random2 = Math.floor( Math.random() * glass1_ids.length );
   let random3 = Math.floor( Math.random() * glass1_ids.length );
 
-  glass_2()
+  glass_2();
   let random4 = Math.floor( Math.random() * glass2_ids.length );
   let random5 = Math.floor( Math.random() * glass2_ids.length );
   let random6 = Math.floor( Math.random() * glass2_ids.length );
   let random7 = Math.floor( Math.random() * glass2_ids.length );
 
+  water_1();
+  let random8 = Math.floor( Math.random() * water1_ids.length );
+  let random9 = Math.floor( Math.random() * water1_ids.length );
+  let random10 = Math.floor( Math.random() * water1_ids.length );
+  let random11 = Math.floor( Math.random() * water1_ids.length );
+
+  
+
+  console.log(glass1_ids[random])
 
   //ランダムで取得したものに当てはまれば移動
-  if(glass_place == glass1_ids[random] ||glass_place == glass1_ids[random2] || glass_place == glass1_ids[random3] ||
-    glass_place == glass2_ids[random4] || glass_place == glass2_ids[random5] ||glass_place == glass2_ids[random6] ||glass_place == glass2_ids[random7]){
-      add_enemy()        
+  if(glass_place == glass1_ids[random] || glass_place == glass1_ids[random2] || glass_place == glass1_ids[random3] ||
+    glass_place == glass2_ids[random4] || glass_place == glass2_ids[random5] || glass_place == glass2_ids[random6] || glass_place == glass2_ids[random7]
+    || glass_place == water1_ids[random8] || glass_place == water1_ids[random9] || glass_place == water1_ids[random10] || glass_place == water1_ids[random11] ){
+    add_enemy()
   }
 }
 
