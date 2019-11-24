@@ -1,10 +1,33 @@
 .get-wrapper
   #monster-name
     = @enemy.name
-    %br 
+    %br
     %span げっとだぜ！
   #monster
     = image_tag @enemy.image
   #get-button 
     #get-button__center
     #get-button__point
+
+.modal-coin
+  %p
+    コイン を しはらって 
+    %br
+    モンスター を げっと しよう
+  %p.pay-alert
+    所持コイン ▶ しはらいご
+  .coin-status
+    100コイン ▶ 0コイン
+  #pay-ok
+    げっとする
+
+.modal-get
+  %p
+    = "#{@enemy.name} を げっとした!"
+  = link_to "ページ を はなれる", getup_path(@enemy.id), class: "back-btn", method: :patch
+
+.overlay
+
+
+= audio_tag "/assets/audios/gacha.mp3", controls: false, loop: true, autoplay: true, id: "gacha"
+= audio_tag "/assets/audios/get.mp3", controls: false, loop: false, autoplay: false, id: "get"

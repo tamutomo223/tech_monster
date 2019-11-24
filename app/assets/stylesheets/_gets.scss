@@ -2,6 +2,11 @@
   height: 100vh;
   width: 100%;
   position: relative;
+  background-color: #CAE9FF;
+  background-image: linear-gradient(0deg,
+  #c7f4ff 25%, #ffebfd 25%, #ffebfd 50%, #c7f4ff 50%, #c7f4ff 75%,#ffebfd 75%, #ffebfd
+  );
+  background-size: 10px;
 }
 
 #monster-name {
@@ -35,6 +40,8 @@
   }
 }
 
+
+//------------------ Monster Ball --------------------//
 #get-button {
   position: relative;
   font-weight: bold;
@@ -84,4 +91,94 @@
     width: 15px;
     background: white;
   }
+}
+
+//------------------ Overlay & Modal --------------------//
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0,0,0,.7);
+}
+
+.modal-coin, .modal-get {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+  height: 400px;
+  width: 600px;
+  background: white;
+  border: 10px solid #333;
+  border-radius: 10px;
+}
+
+.modal-coin, .modal-get {
+  text-align: center;
+  p {
+    line-height: 2.5rem;
+    margin-top: 30px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .pay-alert {
+    font-size: 1.5rem!important;
+  }
+
+  .coin-status {
+    transform: translateX(-11px);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  #pay-ok {
+    margin-top: 45px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0 5px 1px black;
+    color: white;
+    display: inline-block;
+    background: #333;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    border-radius: 10px;
+    &:active {
+      box-shadow: none;
+      transform: translateY(5px);
+    }
+  }
+}
+
+
+
+.modal-get {
+  p {
+    font-size: 2rem;
+    margin-top: 100px!important;
+  }
+  .back-btn {
+    margin-top: 90px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0 5px 1px black;
+    color: white;
+    display: inline-block;
+    background: #333;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    border-radius: 10px;
+    &:active {
+      box-shadow: none;
+      transform: translateY(5px);
+    }
+  }
+}
+
+.modal-get {
+  display: none;
 }

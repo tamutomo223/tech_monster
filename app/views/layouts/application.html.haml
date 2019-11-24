@@ -10,3 +10,5 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     = yield
+
+    = audio_tag "/assets/audios/cursor.mp3", controls: false, preload: true, id: "cursor"
