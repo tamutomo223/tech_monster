@@ -1,6 +1,8 @@
 class BattlesController < ApplicationController
   def show
-    @enemy = Monster.order("RAND()").first
+    @page = params[:id]
+    @monster = Monster.where(field: @page)
+    @enemy = @monster.order("RAND()").first
     @my_monster = Monster.find(current_user.current_monster_id)
   end
 
