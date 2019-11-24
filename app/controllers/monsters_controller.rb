@@ -5,7 +5,7 @@ class MonstersController < ApplicationController
   end
 
   def get
-    @enemy = Monster.find(1)
+    @enemy = Monster.order("RAND()").first
   end
 
   def show
