@@ -80,21 +80,6 @@ window.onload = function(){
     //block.jsの内容を呼び出しarrという配列を受け取る
     block()
     water()
-
-    //BGMの操作
-    $('.fa-volume-up').hide();
-
-    $('.fa-volume-up').click(function() {
-      $(this).hide();
-      $('.fa-volume-mute').show();
-      $('audio')[0].pause();
-    });
-
-    $('.fa-volume-mute').click(function() {
-      $(this).hide();
-      $('.fa-volume-up').show();
-      $('audio')[0].play();
-    });
   }
 
 
