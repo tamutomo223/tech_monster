@@ -9,13 +9,35 @@
   .player
     .player__command
       = "#{@my_monster.name} は どうする？"
-      %p{id: "attack"} 
+      %p{id: "battle"} 
         = icon 'fas', 'caret-right' 
-        たたかう
-      %p 
-        どうぐ
+        せんとう
       %p{id: "escape"} 
         にげる
+
+    .player__command2
+      = "#{@my_monster.name} は どうする？"
+      %p{id: "attack"}
+        こうげき
+      %p{id: "deffens"}
+        ぼうぎょ
+      %p{id: "back"}
+        もどる
+
+    .player__attack
+      .give-attack
+        = "#{@my_monster.name} の こうげき!!"
+      .give-attack-count#playerAttack
+        = "#{@enemy.name} に #{@my_monster.attack} の こうげき を あたえた"
+
+    .enemy__attack
+      .eat-attack
+        = "#{@enemy.name} の こうげき!!"
+      .eat-attack-count#enemyAttack
+        = "#{@my_monster.name} は #{@enemy.attack} の ダメージ を くらった"
+
+
+
     .player__border
     .player__status
       %p{class: "player__status--name"}
@@ -23,10 +45,15 @@
       %p{class: "player__status--hp"} 
         ="HP : #{@my_monster.hp}" 
 
+//--------------------------------- Enemy -------------------------------------------//
 %input{name: "enemy_name", type: "hidden", value: @enemy.name, id: 'enemy_name' }
 %input{name: "enemy_hp", type: "hidden", value: @enemy.hp, id: 'enemy_hp' }
+%input{name: "enemy_attack", type: "hidden", value: @enemy.attack, id: 'enemy_attack' }
+
+//--------------------------------- Player -------------------------------------------//
 %input{name: "my_monster_name", type: "hidden", value: @my_monster.name, id: 'my_monster_name' }
 %input{name: "my_monster_hp", type: "hidden", value: @my_monster.hp, id: 'my_monster_hp' }
+%input{name: "my_monster_attack", type: "hidden", value: @my_monster.attack, id: 'my_monster_attack' }
 
 
 = audio_tag "/assets/audios/battle.mp3", controls: false, autoplay: true, loop: true

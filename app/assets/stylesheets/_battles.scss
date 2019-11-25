@@ -1,22 +1,24 @@
-.battle-wrapper{
+.battle-wrapper {
   padding: 20px 0;
   text-align: center;
   height: 675px;
   width:  900px;
-  margin: 0 auto;
+  margin: 10px auto 0;
   background: black;
 } 
 
-.enemy{
+.enemy {
   z-index: 1;
+  position: fixed;
+  top: -15px;
+  left: 275px;
   color: white;
   border: 5px solid white;
-  width: 400px;
+  width: 890px;
   height: 150px;
   margin: 0 auto;
   margin-top:30px;
   padding: 10px 0 0;
-  border-radius: 5px;
   &__name {
     margin: 10px 0 0;
   }
@@ -31,6 +33,11 @@
 }
 
 .enemy-img {
+  position: fixed;
+  top: 150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   opacity: 0;
   width: 25%;
   height: auto;
@@ -40,29 +47,73 @@
 }
 
 .player {
+  position: fixed;
+  bottom: 20px;
+  left: 275px;
   display: flex;
   justify-content: space-around;
   color: white;
   height: 200px;
-  width: 800px;
+  width: 890px;
   border: 5px solid white;
   margin: 0 auto;
   padding: 10px 20px;
-  border-radius: 5px;
 
-  &__command p, &__status p {
-    margin: 15px 0 0;
+  &__command {
+    position: fixed;
+    bottom: 70px;
+    left: 450px
+  }
+
+  &__command2 {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    left: 450px
+  }
+
+  &__command p, &__command2 p, &__status p {
+    margin: 25px 0 0;
+  }
+
+  &__attack {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    left: 330px;
+    .give-attack {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  .enemy__attack {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    left: 330px;
+    .eat-attack {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
   }
 
   &__border {
-    transform: translateY(-10px);
+    position: fixed;
     height: 195px;
     width: 5px;
     background: white;
+    bottom: 22px;
+    left: 865px;
   }
 
   &__status {
-    margin: 0 50px 0 0;
+    position: fixed;
+    bottom: 90px;
+    right: 365px;
+    p {
+      font-size: 1.4rem;
+    }
   }
 }
 
