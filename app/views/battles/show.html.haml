@@ -27,6 +27,9 @@
 %input{name: "enemy_hp", type: "hidden", value: @enemy.hp, id: 'enemy_hp' }
 %input{name: "my_monster_name", type: "hidden", value: @my_monster.name, id: 'my_monster_name' }
 %input{name: "my_monster_hp", type: "hidden", value: @my_monster.hp, id: 'my_monster_hp' }
+%input{type:"hidden",class:"id",value:@id}
+%input{type:"hidden",class:"top_move",value:@top}
+%input{type:"hidden",class:"left_move",value:@left}
 
 
 = audio_tag "/assets/audios/battle.mp3", controls: false, autoplay: true, loop: true

@@ -1,7 +1,9 @@
 window.onload = function(){
   // ページ読み込み時に実行したい処理
 
-  
+    $(".icon").attr("id",localStorage.id)
+    $(".icon").css("left",localStorage.left)
+    $(".icon").css("top",localStorage.top)
     //キーが押された時の処理
     $("html").keyup(function(e){
       switch(e.which){

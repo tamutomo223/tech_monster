@@ -41,9 +41,11 @@
     %img{src:"/ロケット団女.png"}
   .rmen    
     %img{src:"/ロケット団男.png"}
-  .wataru
-    %img{src:"/カイリュー.gif"}
   .adult
     %img{src:"/大人のお姉さん.png"}
+
+%input{type:"hidden",class:"id",value:@id}
+%input{type:"hidden",class:"top_move",value:@top}
+%input{type:"hidden",class:"left_move",value:@left}
 
 = audio_tag "/assets/audios/top.mp3", controls: false, loop: true, autoplay: true

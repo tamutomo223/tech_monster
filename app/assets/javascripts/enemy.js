@@ -2,11 +2,16 @@ function add_enemy() {
   add_red1()
 
   function move_window(){
-    attr = $(".icon").attr('id')
+    attr = $(".icon").attr('id');
     attrs = Number(attr)
     glass_1()
     glass_2()
     water_1()
+    lefts = $(".icon").css("left");
+    tops = $(".icon").css("top");
+    localStorage.top = tops;
+    localStorage.left = lefts;
+    localStorage.id = attrs;
     if(glass1_ids.indexOf(attrs) != -1){
       window.location.href = "battles/1"
     }else if(glass2_ids.indexOf(attrs) != -1) {

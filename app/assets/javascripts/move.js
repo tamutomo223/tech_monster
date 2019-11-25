@@ -61,7 +61,7 @@ function move(a, b ,c ,d){
   if(arr.indexOf(goal) != -1){
   console.log("いけないよ")
   }  else if(arrw.indexOf(goal) != -1){
-  $('.icon').animate(d,200);
+  $('.icon').animate(d,50);
   encount(c)
   $('.right').removeClass('active');
   $('.top').removeClass('active');
@@ -73,11 +73,11 @@ function move(a, b ,c ,d){
   $('.rapu_bottom').removeClass('active');
   $(b).addClass('active');
   } else if(goal == 6004) {
-    $('.icon').animate(d,200);
+    $('.icon').animate(d,50);
     setTimeout(poke,400);
   } else {
   //当てはまらなければ右に２５ピクセル動き                       
-  $('.icon').animate(d,200);
+  $('.icon').animate(d,50);
   //エンカウント関数を呼び出す(上記)
   encount(c)
   }

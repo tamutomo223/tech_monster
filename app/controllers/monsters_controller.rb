@@ -26,14 +26,17 @@ class MonstersController < ApplicationController
   def getUpdateBattle
     @user = User.find(current_user.id)
     @enemy = Monster.find(params[:id])
-    @user.update(monster_ids: @enemy.id,current_monster_id: @enemy.id)
+    @user.update(current_monster_id: @enemy.id)
+    @monster_user = MonsterUser.new(user_id: current_user.id,monster_id:@enemy.id)
+    @monster_user.save
     redirect_to root_path
   end
 
   def getUpdateIn
     @user = User.find(current_user.id)
     @enemy = Monster.find(params[:id])
-    @user.update(monster_ids: @enemy.id)
+    @monster_user = MonsterUser.new(user_id: current_user.id,monster_id:@enemy.id)
+    @monster_user.save
     redirect_to root_path
   end
 end
