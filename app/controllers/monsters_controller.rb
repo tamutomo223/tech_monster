@@ -23,10 +23,17 @@ class MonstersController < ApplicationController
     @enemy = Monster.where( 'id >= ?', rand(Monster.first.id..Monster.last.id) ).first
   end
 
-  def getUpdate
+  def getUpdateBattle
     @user = User.find(current_user.id)
     @enemy = Monster.find(params[:id])
-    @user.update(current_monster_id: @enemy.id)
+    @user.update(monster_ids: @enemy.id,current_monster_id: @enemy.id)
+    redirect_to root_path
+  end
+
+  def getUpdateIn
+    @user = User.find(current_user.id)
+    @enemy = Monster.find(params[:id])
+    @user.update(monster_ids: @enemy.id)
     redirect_to root_path
   end
 end

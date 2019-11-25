@@ -8,7 +8,8 @@ Rails.application.routes.draw do
 
   resources :monsters, only: [:index,:show]
   get "/get", to: "monsters#get"
-  patch "/get/:id", to: "monsters#getUpdate", as: 'getup'
+  patch "/get/:id", to: "monsters#getUpdateBattle", as: 'getupbattle'
+  patch "/get/:id/in", to: "monsters#getUpdateIn", as: 'getupin'
   patch "/update/:id", to: "monsters#update"
   get "/redirect", to: "maps#redirect"
 end

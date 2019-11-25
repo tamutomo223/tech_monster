@@ -24,7 +24,9 @@
 .modal-get
   %p
     = "#{@enemy.name} を げっとした!"
-  = link_to "ページ を はなれる", getup_path(@enemy.id), class: "back-btn", method: :patch
+  
+  = link_to "戦闘で使う", getupbattle_path(@enemy.id), class: "back-btn", method: :patch
+  = link_to "手持ちに加える", getupin_path(@enemy.id), class: "back-btn", method: :patch
 
 .overlay
 
