@@ -11,4 +11,6 @@
   %body
     = yield
 
+    = icon 'fas', 'volume-up'
+    = icon 'fas', 'volume-mute'
     = audio_tag "/assets/audios/cursor.mp3", controls: false, preload: true, id: "cursor"
