@@ -74,6 +74,9 @@ function move(a, b ,c ,d){
   $(b).addClass('active');
   } else if(goal == 6004) {
     $('.icon').animate(d,50);
+    localStorage.top = "600px";
+    localStorage.left = "775px";
+    localStorage.id = 5004;
     setTimeout(poke,400);
   } else {
   //当てはまらなければ右に２５ピクセル動き                       

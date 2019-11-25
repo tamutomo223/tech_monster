@@ -41,6 +41,12 @@ window.onload = function(){
           break;
 
           case 80:
+            attrs = $(".icon").attr('id');
+            lefts = $(".icon").css("left");
+            tops = $(".icon").css("top");
+            localStorage.top = tops;
+            localStorage.left = lefts;
+            localStorage.id = attrs;
             window.location.href = "monsters"
           break;
 
