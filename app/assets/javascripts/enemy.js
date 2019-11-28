@@ -13,11 +13,11 @@ function add_enemy() {
     localStorage.left = lefts;
     localStorage.id = attrs;
     if(glass1_ids.indexOf(attrs) != -1){
-      window.location.href = "battles/1"
+      window.location.href = "/battles/1"
     }else if(glass2_ids.indexOf(attrs) != -1) {
-      window.location.href = "battles/2"
+      window.location.href = "/battles/2"
     }else if(water1_ids.indexOf(attrs) != -1){
-      window.location.href = "battles/3"
+      window.location.href = "/battles/3"
     }
   }
 

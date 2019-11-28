@@ -47,7 +47,7 @@ window.onload = function(){
             localStorage.top = tops;
             localStorage.left = lefts;
             localStorage.id = attrs;
-            window.location.href = "monsters"
+            window.location.href = "/monsters"
           break;
 
           case 78:
@@ -59,7 +59,16 @@ window.onload = function(){
           break;
 
           case 84:
+            window.location.href = "/maps/index"
+          break
+
+          case 32:
+            window.location.href = "/maps/index"
+          break
+
+          case 90:
             window.location.href = "/"
+          break
       }
     });
 

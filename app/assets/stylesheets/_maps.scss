@@ -2,6 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.top-wrapper {
+  background-image: url("/monster/タイトル.png");
+  background-color: black ;
+  width:1000px;
+  height:750px;
+  background-size: cover;
+  margin: 0 auto;
+  color: white;
+  font-size:60px;
+  line-height: 750px;
+  text-align: center;
+  position: relative;
+  .top-title {
+    position: absolute;
+    top:75px;
+    font-size:30px;
+    text-align: center;
+    left:35%;
+  }
+}
+
 .side-bar {
   position: absolute;
   top:0;

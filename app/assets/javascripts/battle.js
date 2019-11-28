@@ -38,7 +38,7 @@ $(function() {
     $('#punch')[0].play();
 
     if(enemy.hasClass('down')) {
-      window.location.href = "/";
+      window.location.href = "/maps/index";
     } else if(enemyHp.hasClass('dying')) {
       enemy.empty();
       enemy.addClass('down');
@@ -66,7 +66,7 @@ $(function() {
     $('#punch')[0].play();
 
     if(player.hasClass('down')) {
-      window.location.href = "/";
+      window.location.href = "/maps/index";
     } else if(playerHp.hasClass('dying')) {
       player.empty();
       player.addClass('down');
@@ -141,7 +141,7 @@ $(function() {
           battle.prepend('<i class="fas fa-caret-right"></i>');
 
         } else if( parent.attr("id") === "escape" ) {
-          window.location.href = "/";
+          window.location.href = "/maps/index";
 
         } else if( parent.attr("id") === "back" ) {
           parent.find('.fa-caret-right').remove();
