@@ -33,10 +33,15 @@
   text-align: center;
   .current_monster {
     margin-top:50px;
+    font-size:16px;
     img{
       margin-top:30px;
       height: 100px;
       width: 130px;
+    }
+
+    .henkou {
+      font-size:16px;
     }
   }
   .email {
@@ -56,7 +61,7 @@
   height: 750px;
   width:1000px;
   margin: 0 auto;
-  background-image:url("/ベース2.png");
+  background-image:url("/map/ベース2.png");
   background-size: 50px;
   font-size:0;
   .squares {
@@ -69,44 +74,44 @@
   }
 
   [id = "10102"],[id = "10103"],[id= "10104"],[id= "10105"]{
-    background-image:url("/壁.png");
+    background-image:url("/map/壁.png");
     background-size: 52px;
   }
 
   [id = "10086"],[id = "10066"],[id = "10046"],[id = "10026"]{
-    background-image:url("/壁右.png");
+    background-image:url("/map/壁右.png");
     background-size: cover;
   }
 
   [id = "10215"] {
-    background-image:url("/ポケセン左上1.png");
+    background-image:url("/map/ポケセン左上1.png");
     background-size: cover;
   }
 
   [id = "10216"] {
-    background-image:url("/ポケセン右上1.png");
+    background-image:url("/map/ポケセン右上1.png");
     background-size: cover;
   }
 
   [id= "10235"] {
-    background-image:url("/ポケセン左下1.png");
+    background-image:url("/map/ポケセン左下1.png");
     background-size: cover;
   }
 
   [id= "10236"]{
-    background-image:url("/ポケセン右下1.png");
+    background-image:url("/map/ポケセン右下1.png");
     background-size: cover;
   }
 
   [id = "10106"] {
-    background-image:url("/壁右下.png");
+    background-image:url("/map/壁右下.png");
     background-size: cover;
   }
 
   
   [id = "10065"],[id = "10064"],[id= "10063"],[id= "10062"],[id= "10042"],[id= "10083"],[id= "10084"],[id= "10085"],
   [id= "10043"],[id = "10045"],[id = "10044"],[id = "10082"]{
-    background-image:url("/草5.png");
+    background-image:url("/map/草5.png");
     background-size: cover;
   }
 
@@ -117,7 +122,7 @@
   [id = "10243"],[id = "10244"],[id = "10245"],[id = "10246"],[id = "10247"]
   ,[id = "10263"],[id = "10264"],[id = "10265"],[id = "10266"],[id = "10267"],[id = "10283"],[id = "10287"],[id = "10284"],[id = "10285"],[id = "10286"]
   {
-    background-image:url("/海.png");
+    background-image:url("/map/海.png");
     background-size: cover;
   }
 
@@ -125,71 +130,71 @@
 
   [id = "10183"],[id = "10184"],[id = "10185"],[id = "10186"],[id = "10187"]
   {
-    background-image:url("/海上.png");
+    background-image:url("/map/海上.png");
     background-size: cover;
   }
 
   [id = "10182"]{
-    background-image:url("/海左上.png");
+    background-image:url("/map/海左上.png");
     background-size: cover;
   }
 
   [id = "10272"]{
-    background-image:url("/看板1.png");
+    background-image:url("/map/看板1.png");
     background-size: cover;
   }
 
   [id = "10188"]{
-    background-image:url("/海右上.png");
+    background-image:url("/map/海右上.png");
     background-size: cover;
   }
 
   [id = "10208"],[id = "10228"],[id = "10248"],[id = "10268"],[id = "10288"]{
-    background-image:url("/海右.png");
+    background-image:url("/map/海右.png");
     background-size: cover;
   }
 
   [id = "10202"],[id = "10222"],[id = "10242"],[id = "10262"],[id = "10282"]{
-    background-image:url("/海左.png");
+    background-image:url("/map/海左.png");
     background-size: cover;
   }
   
   [id = "10051"],[id = "10052"],[id = "10053"],[id = "10072"],[id = "10073"],[id = "10031"],[id = "10032"],[id = "10033"],[id = "10034"]
   ,[id = "10035"],[id = "10036"],[id = "10054"],[id = "10055"],[id = "10056"],[id = "10071"],[id = "10074"],[id = "10075"],[id = "10076"],[id = "10092"]
   ,[id = "10093"],[id = "10094"],[id = "10091"],[id = "10095"],[id = "10096"],[id = "10111"],[id = "10112"],[id = "10113"],[id = "10114"],[id = "10115"],[id = "10116"]{
-    background-image:url("/草5.png");
+    background-image:url("/map/草5.png");
     background-size: cover;
   }
 
   [id = "10190"]{
-    background-image:url("/道左上1.png");
+    background-image:url("/map/道左上1.png");
     background-size: cover;
   }
 
   [id = "10197"]{
-    background-image:url("/道右上.png");
+    background-image:url("/map/道右上.png");
     background-size: cover;
   }
 
   [id = "10192"],[id = "10195"],[id = "10196"],[id = "10191"]{
-    background-image:url("/道上1.png");
+    background-image:url("/map/道上1.png");
     background-size: cover;
   }
 
   [id = "10210"],[id = "10230"],[id = "10250"],[id = "10270"]{
-    background-image:url("/道左.png");
+    background-image:url("/map/道左.png");
     background-size: cover;
   }
 
   [id = "10217"],[id = "10237"],[id = "10257"],[id = "10277"]{
-    background-image:url("/道右.png");
+    background-image:url("/map/道右.png");
     background-size: cover;
   }
 
   [id = "10194"],[id = "10193"],[id = "10211"],[id = "10213"],[id = "10212"],[id = "10214"],[id = "10231"],[id = "10232"],[id = "10233"],
   [id = "10234"],[id = "10252"],[id = "10253"],[id = "10254"],[id = "10255"],[id = "10256"],
   [id = "10271"],[id = "10251"],[id = "10273"],[id = "10274"],[id = "10275"],[id = "10276"],[id = "10293"],[id = "10294"]{
-    background-image:url("/道1.png");
+    background-image:url("/map/道1.png");
     background-size: cover;
   }
 
@@ -200,36 +205,36 @@
   [id = "10281"],[id = "10289"],[id = "10290"]
   ,[id = "10291"],[id = "10292"],[id = "10295"],[id = "10296"],[id = "10297"],[id = "10298"],[id = "10030"],[id = "10050"],[id = "10070"],[id = "10090"],[id = "10110"]
   ,[id = "10130"],[id = "10131"],[id = "10132"],[id = "10133"],[id = "10134"],[id = "10135"],[id = "10136"],[id = "10137"]{
-    background-image:url("/木2.png");
+    background-image:url("/map/木2.png");
     background-size: cover;
   }
 
   [id= "10047"],[id= "10048"],[id= "10088"],[id= "10089"] {
-    background-image:url("/段差.png");
+    background-image:url("/map/段差.png");
     background-size: cover;
   }
   
   [id= "10049"],[id= "10087"]{
-    background-image:url("/段差階段.png");
+    background-image:url("/map/段差階段.png");
     background-size: cover;
   }
   [id = "10211"] {
-    background-image:url("/家左上.png");
+    background-image:url("/map/家左上.png");
     background-size: cover;
   }
 
   [id = "10212"] {
-    background-image:url("/家右上.png");
+    background-image:url("/map/家右上.png");
     background-size: cover;
   }
 
   [id = "10232"] {
-    background-image:url("/家右下.png");
+    background-image:url("/map/家右下.png");
     background-size: cover;
   }
 
   [id = "10231"] {
-    background-image:url("/家左下.png");
+    background-image:url("/map/家左下.png");
     background-size: cover;
   }
 
