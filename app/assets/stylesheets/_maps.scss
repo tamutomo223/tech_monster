@@ -28,14 +28,9 @@
   position: absolute;
   top:0;
   left:0;
-
-  width:280px;
-
-  width:300px;
-
+  width:calc((100vw - 950px)/2);
   padding-left:5px;
   text-align: center;
-  
   .current_monster {
     margin-top:50px;
     img{
@@ -43,15 +38,11 @@
       height: 100px;
       width: 130px;
     }
-
-
   }
-
   .email {
     margin-top:100px ;
     line-height: 30px;
   }
-
   .log_out {
     a{
       color: black;
@@ -62,7 +53,6 @@
 
 .wrapper {
   position: relative;
-  left: 5%;
   height: 750px;
   width:1000px;
   margin: 0 auto;
