@@ -62,7 +62,7 @@ window.onload = function(){
             window.location.href = "/maps/index"
           break
 
-          case 32:
+          case 13:
             window.location.href = "/maps/index"
           break
 
