@@ -23,7 +23,7 @@ $(function() {
     setTimeout(function() {
       overlay.fadeIn();
       modalGet.fadeIn();
-    },4500);
+    },3000);
   });
 
 

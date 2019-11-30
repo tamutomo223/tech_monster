@@ -23,7 +23,7 @@ window.onload = function(){
           case 40:
             move(".bottom",".rapu_bottom",-1000,{top: '+=25px'})
           break;
-          
+
           case 68:
             fast_move(".right",2,{left: '+=50px'})
           break;
@@ -60,10 +60,11 @@ window.onload = function(){
 
           case 84:
             window.location.href = "/maps/index"
+
           break
 
           case 13:
-            window.location.href = "/maps/index"
+            // window.location.href = "/maps/index"
           break
 
           case 90:

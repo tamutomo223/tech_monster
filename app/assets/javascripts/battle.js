@@ -1,5 +1,5 @@
 $(function() {
-  
+
   // モンスターの鳴き声
   if(document.URL.match(/battles\/\d/)) {
     setTimeout(function() {
@@ -12,7 +12,7 @@ $(function() {
   let escape = $('#escape');
   let attack = $('#attack');
   let deffens = $('#deffens');
-  
+
   let enemy = $('.enemy');
   let enemyHp = $('.enemy__hp');
   let enemyName = $('#enemy_name').val();
@@ -24,7 +24,7 @@ $(function() {
   let playerName = $('#my_monster_name').val();
   let playerHpCount = $('#my_monster_hp').val();
   let playerAttackCount = $('#my_monster_attack').val();
-  
+
 
   let command1 = $('.player__command');
   let command2 = $('.player__command2');
@@ -43,7 +43,11 @@ $(function() {
       enemy.empty();
       enemy.addClass('down');
       enemy.append(`${enemyName} を たおした!`);
-    } else if(parseInt(enemyHpCount) <= 50) {
+      $('.enemy-img').slideUp(1000);
+      setTimeout(function() {
+        window.location.href = "/maps/index";
+      },2000);
+    } else if(parseInt(enemyHpCount) <= 100) {
       enemyHp.addClass('dying');
     };
 
@@ -71,7 +75,10 @@ $(function() {
       player.empty();
       player.addClass('down');
       player.append(`${playerName} は たおされた...`);
-    } else if(parseInt(playerHpCount) <= 10) {
+      setTimeout(function() {
+        window.location.href = "/maps/index";
+      },2000);
+    } else if(parseInt(playerHpCount) <= 100) {
       playerHp.addClass('dying');
     };
 
@@ -103,7 +110,7 @@ $(function() {
 
       case 38: // Key[↑]
         parent = $('.fa-caret-right').parent();
-        
+
         if( parent.attr("id") != "battle" && parent.attr("id") != "attack" && parent.attr("id") != "playerAttack" ) {
           $('#cursor')[0].currentTime = 0;
           parent.prev().prepend('<i class="fas fa-caret-right"></i>');
@@ -119,7 +126,7 @@ $(function() {
           command1.hide();
           command2.show();
           attack.prepend('<i class="fas fa-caret-right"></i>');
-          
+
         } else if ( parent.attr("id") == "attack" ) {
           attackPlayer();
           parent.find('.fa-caret-right').remove();
@@ -149,7 +156,7 @@ $(function() {
           command1.show();
           battle.prepend('<i class="fas fa-caret-right"></i>');
         }
-            
+
       break;
     }
   });
