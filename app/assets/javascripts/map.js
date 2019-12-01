@@ -60,11 +60,13 @@ window.onload = function(){
 
           case 84:
             window.location.href = "/maps/index"
-
           break
 
           case 13:
-            // window.location.href = "/maps/index"
+            var path = location.pathname ;
+            if(path == "/"){
+              window.location.href = "/maps/index"
+            }
           break
 
           case 90:
