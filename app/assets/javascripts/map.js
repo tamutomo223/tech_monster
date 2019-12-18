@@ -41,25 +41,29 @@ window.onload = function(){
           break;
 
           case 80:
-            attrs = $(".icon").attr('id');
-            lefts = $(".icon").css("left");
-            tops = $(".icon").css("top");
-            localStorage.top = tops;
-            localStorage.left = lefts;
-            localStorage.id = attrs;
-            window.location.href = "/monsters"
+            if(path == "/maps/index"){
+              attrs = $(".icon").attr('id');
+              lefts = $(".icon").css("left");
+              tops = $(".icon").css("top");
+              localStorage.top = tops;
+              localStorage.left = lefts;
+              localStorage.id = attrs;
+              window.location.href = "/monsters"
+            }
           break;
 
-          case 78:
-            window.location.href = "/users/sign_up"
-          break;
+          // case 78:
+          //   window.location.href = "/users/sign_up"
+          // break;
 
-          case 76:
-            window.location.href = "/users/sign_in"
-          break;
+          // case 76:
+          //   window.location.href = "/users/sign_in"
+          // break;
 
           case 84:
+            if(path == "/monsters"){
             window.location.href = "/maps/index"
+            }
           break
 
           case 13:
@@ -69,9 +73,9 @@ window.onload = function(){
             }
           break
 
-          case 90:
-            window.location.href = "/"
-          break
+          // case 90:
+          //   window.location.href = "/"
+          // break
       }
     });
 
