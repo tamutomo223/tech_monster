@@ -5,7 +5,11 @@ class MapsController < ApplicationController
   end
     
   def index
-    @current_user_monster = Monster.find(current_user.current_monster_id)
+    @current_user_monster = Monster.find_by(id:current_user.current_monster_id)
+    if @current_user_monster == nil
+      MonsterUser.create(user_id:current_user.id,monster_id:1)
+      User.update(current_monster_id:1)
+    end
   end
 
   def redirect

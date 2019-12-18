@@ -1,5 +1,5 @@
-Monster.create(name: 'ウソッキー', image: '/monster/ウソッキー.png', attack: 40, hp: 400,field:'2')
 Monster.create(name: 'オオタチ', image: '/monster/オオタチ.png', attack: 20, hp: 100,field:'1')
+Monster.create(name: 'ウソッキー', image: '/monster/ウソッキー.png', attack: 40, hp: 400,field:'2')
 Monster.create(name: 'カイリュー', image: '/monster/カイリュー.png', attack: 120, hp: 700,field:'2')
 Monster.create(name: 'カラマネロ', image: '/monster/カラマネロ.png', attack: 40, hp: 500,field:'3')
 Monster.create(name: 'キバゴ', image: '/monster/キバゴ.png', attack: 50, hp: 300,field:'2')
