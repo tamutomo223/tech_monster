@@ -33,7 +33,7 @@ POCKET QUESTとは、みんな大好きポケモンと、ドラクエを組み�
 
     上下左右への主人公の移動が可能。移動するたびに、主人公にIDが付与され、それにより位置情報を把握する。座標をもとに、進める場所を制限したり、建物に入ったり、波乗り状態になったりする。
 
-<img width="398" alt="スクリーンショット 2019-12-02 14 38 27" src="https://user-images.githubusercontent.com/57092560/71317990-7fd85100-24cd-11ea-9f33-707c0bb4013c.png"><img width="398" alt="スクリーンショット 2019-12-02 14 38 33" src="https://user-images.githubusercontent.com/57092560/71317991-7fd85100-24cd-11ea-8234-fe6a05ce3d6f.png">
+<img width="200" alt="スクリーンショット 2019-12-02 14 38 27" src="https://user-images.githubusercontent.com/57092560/71317990-7fd85100-24cd-11ea-9f33-707c0bb4013c.png"><img width="200" alt="スクリーンショット 2019-12-02 14 38 33" src="https://user-images.githubusercontent.com/57092560/71317991-7fd85100-24cd-11ea-8234-fe6a05ce3d6f.png">
 
 ### ・戦闘モンスター選択機能
 
