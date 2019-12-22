@@ -1,24 +1,27 @@
-# README
+# このアプリについて
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## PocketQuestとは
+POCKET QUESTとは、みんな大好きポケモンと、ドラクエを組み合わせたRPGです。
+草むらでモンスターと遭遇し、戦うことができます。
 
-Things you may want to cover:
+## 概要
+  アプリ名：POCKET QUEST
+  
+  使用言語：Ruby on Rails、JavaScript
+  
+  主な機能：キー操作移動、ランダムエンカウント、モンスター選択、バトル機能、ガチャ機能、BGM
+  
+  作業人数：2人
+  
+  作業日数：12日間
 
-* Ruby version
 
-* System dependencies
+## 共同開発のきっかけ
+  個人アプリの開発がある程度終わり、チーム開発スタートまでの期間が空いていたので、共同開発の経験を積んでおくことで、チーム開発にお互い生かせるのではないかと考えた
 
-* Configuration
+## 作業メンバー
+  ### 田村友哉(たむらともや)
+  <https://github.com/tamutomo223>
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  ### ユウマ
+  <https://github.com/yuma11>
