@@ -5,6 +5,7 @@
   width:  900px;
   margin: 10px auto 0;
   background: black;
+  position: relative;
 } 
 
 .enemy {
@@ -47,9 +48,10 @@
 }
 
 .player {
-  position: fixed;
-  bottom: 20px;
-  left: 275px;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: space-around;
   color: white;
@@ -60,14 +62,14 @@
   padding: 10px 20px;
 
   &__command {
-    position: fixed;
+    
     bottom: 70px;
     left: 450px
   }
 
   &__command2 {
     display: none;
-    position: fixed;
+    
     bottom: 40px;
     left: 450px
   }
@@ -78,7 +80,7 @@
 
   &__attack {
     display: none;
-    position: fixed;
+    
     bottom: 80px;
     left: 330px;
     .give-attack {
@@ -89,7 +91,7 @@
 
   .enemy__attack {
     display: none;
-    position: fixed;
+    
     bottom: 80px;
     left: 330px;
     .eat-attack {
@@ -108,7 +110,7 @@
   }
 
   &__status {
-    position: fixed;
+    
     bottom: 90px;
     right: 365px;
     p {

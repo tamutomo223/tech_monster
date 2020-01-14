@@ -41,7 +41,7 @@ window.onload = function(){
           break;
 
           case 80:
-            if(path == "/maps/index"){
+            
               attrs = $(".icon").attr('id');
               lefts = $(".icon").css("left");
               tops = $(".icon").css("top");
@@ -49,7 +49,7 @@ window.onload = function(){
               localStorage.left = lefts;
               localStorage.id = attrs;
               window.location.href = "/monsters"
-            }
+            
           break;
 
           // case 78:
@@ -61,9 +61,9 @@ window.onload = function(){
           // break;
 
           case 84:
-            if(path == "/monsters"){
+            
             window.location.href = "/maps/index"
-            }
+            
           break
 
           case 13:
